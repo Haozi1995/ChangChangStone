@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js" lang="" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{css/nivo-slider.css}" type="text/css" media="screen" />
+<link rel="stylesheet" th:href="@{css/default.css}" type="text/css" media="screen" />
+<title>Insert title here</title>
+<style type="text/css">
+body{ text-align: center;}	
+.pic{margin:0 auto; solid #000;}
+</style>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script th:src="@{js/jquery.nivo.slider.pack.js}" ></script>
+
+<!-- 图片轮询控件 -->
+					<div class="slider-wrapper">  
+						<div class="nivoSlider pic" id="slider" style="width:650px;height:350px">  <!--此处的类名为必需，不可更改为其他的，若要更改，须先更改引入的CSS文件中的类名，不建议这么做-->  
+							  <img src="images/work-1.jpg" alt="img1"  /> <!--data-transition自定义动画效果-->  
+						      <img src="images/work-2.jpg" alt="img2"/> 
+						      <img src="images/work-4.jpg" alt="img2"/>
+						      <img src="images/work-5.jpg" alt="img2"/> 
+						</div>  
+					</div> 
+<script>  
+      $(window).load(function () {  
+          $('#slider').nivoSlider({  
+              effect:'sliceDown',   //设置幻灯变化效果，可以使用’random’
+              //controlNavThumbs:false,   //导航是否使用缩略图
+              //controlNav: true,  //是否显示导航控制
+              //directionNav: true,
+              //directionNavHide: true,	//是否悬浮显示导航
+              controlNav:false,
+              prevText: '上一张',  //上一张文字设定
+              nextText: '下一张'	//下一张文字设定
+          })  
+      })  
+</script>  
+</body>
+</html>

@@ -1,0 +1,393 @@
+<html class="no-js" lang="" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="utf-8"></meta>
+    <meta name="description" content=""></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>长长石材</title>
+    <link rel="apple-touch-icon" sizes="180x180" th:href="@{views/apple-icon-180x180.png}"></link>
+    <link rel="icon" type="image/png" sizes="192x192" th:href="@{android-icon-192x192.png}"></link>
+    <link rel="icon" type="image/png" sizes="32x32" th:href="@{favicon-32x32.png}"></link>
+    <link rel="icon" type="image/png" sizes="96x96" th:href="@{favicon-96x96.png}"></link>
+    <link rel="icon" type="image/png" sizes="16x16" th:href="@{favicon-16x16.png}"></link>
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}"></link>
+    <link rel="stylesheet" th:href="@{css/flexslider.css}"></link>
+    <link rel="stylesheet" th:href="@{css/jquery.fancybox.css}"></link>
+    <link rel="stylesheet" th:href="@{css/main.css}"></link>
+    <link rel="stylesheet" th:href="@{css/responsive.css}"></link>
+    <link rel="stylesheet" th:href="@{css/animate.min.css}"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" th:href="@{css/nivo-slider.css}" type="text/css" media="screen" />
+	<link rel="stylesheet" th:href="@{css/default.css}" type="text/css" media="screen" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script th:src="@{js/jquery.nivo.slider.pack.js}" ></script>
+	<style type="text/css">
+		body{ text-align: center;}	
+		.pic{margin:0 auto; solid #000;}
+	</style>
+</head>
+<body>
+
+
+	<section class="banner" role="banner">
+        <header id="header">
+            <div class="header-content clearfix">
+                <a class="logo" href="#"><img src="images/logo.png" alt=""/></a> <!-- logo标志 -->
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="#features">首页</a></li>
+                        <li><a href="#works">石材展示</a></li>
+                        <li><a href="#teams">成品展出</a></li>
+                        <li><a href="#testimonials">店铺位置</a></li>
+                        <li><a href="#download">联系我们</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a>
+            </div><!-- header content -->
+        </header><!-- header -->
+        
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="banner-text text-center">
+                	<!-- 图片轮询控件 -->
+					<div class="slider-wrapper pic" style="width:850px;height:350px"> 
+						<div class="nivoSlider" id="slider" >  <!-- 此处的类名为必需，不可更改为其他的，若要更改，须先更改引入的CSS文件中的类名，不建议这么做   -->
+							  <img src="images/work-1.jpg" alt="img1"/> <!-- data-transition自定义动画效果   -->
+						      <img src="images/work-2.jpg" alt="img2"/>  
+						      <img src="images/work-4.jpg" alt="img2"/>  
+						      <img src="images/work-5.jpg" alt="img2"/>  
+						</div>  
+					</div>
+                </div><!-- banner text -->
+            </div>
+        </div>
+    </section><!-- banner -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-tools"></span>
+                    <div class="feature-content">
+                        <h5>跳转1</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-desktop"></span>
+                    <div class="feature-content">
+                        <h5>跳转2</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-lightbulb"></span>
+                    <div class="feature-content">
+                        <h5>跳转3</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-genius"></span>
+                    <div class="feature-content">
+                        <h5>跳转4</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-briefcase"></span>
+                    <div class="feature-content">
+                        <h5>跳转5</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-download"></span>
+                    <div class="feature-content">
+                        <h5>跳转6</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- features -->
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+
+    <section id="works" class="works section no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-1.jpg" class="work-box">
+                        <img src="images/work-1.jpg" alt=""/>
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>项目名称</h5>
+                                <p>Website Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-2.jpg" class="work-box">
+                        <img src="images/work-2.jpg" alt=""/>
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Project Name</h5>
+                                <p>Website Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-3.jpg" class="work-box">
+                        <img src="images/work-3.jpg" alt=""/>
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Project Name</h5>
+                                <p>Website Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-4.jpg" class="work-box">
+                        <img src="images/work-4.jpg" alt=""/>
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Project Name</h5>
+                                <p>Website Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-5.jpg" class="work-box">
+                        <img src="images/work-5.jpg" alt=""/>
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Project Name</h5>
+                                <p>Website Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-6.jpg" class="work-box">
+                        <img src="images/work-6.jpg" alt=""/>
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Project Name</h5>
+                                <p>Website Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-7.jpg" class="work-box">
+                        <img src="images/work-7.jpg" alt=""/>
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Project Name</h5>
+                                <p>Website Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-8.jpg" class="work-box">
+                        <img src="images/work-8.jpg" alt=""/>
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Project Name</h5>
+                                <p>Website Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><!-- works -->
+
+    <section id="teams" class="section teams">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-1.jpg" alt="" class="img-responsive"/>
+                        <div class="person-content">
+                            <h4>Ruth Wood</h4>
+                            <h5 class="role">Founder, CEO</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-2.jpg" alt="" class="img-responsive"/>
+                        <div class="person-content">
+                            <h4>Timothy Reed</h4>
+                            <h5 class="role">Co-Founder, Developer</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-3.jpg" alt="" class="img-responsive"/>
+                        <div class="person-content">
+                            <h4>Victoria Valdez</h4>
+                            <h5 class="role">UI Designer</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-4.jpg" alt="" class="img-responsive"/>
+                        <div class="person-content">
+                            <h4>Beverly Little</h4>
+                            <h5 class="role">Data Scientist</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+            </div>
+        </div>
+    </section><!-- teams -->
+
+    <section id="testimonials" class="section testimonials no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="col-md-6">
+                                <div class="avatar">
+                                    <img src="images/testimonial-1.jpg" alt="" class="img-responsive"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <blockquote>
+                                    <p>"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."
+                                    </p>
+                                    <cite class="author">Susan Sims, Interaction Designer at XYZ</cite>
+                                </blockquote>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-md-6">
+                                <div class="avatar">
+                                    <img src="images/testimonial-2.jpg" alt="" class="img-responsive"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <blockquote>
+                                    <p>"Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur...."
+                                    </p>
+                                    <cite class="author">Susan Sims, Interaction Designer at XYZ</cite>
+                                </blockquote>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- flexslider -->
+            </div>
+        </div>
+    </section><!-- testimonials -->
+
+    <section id="download" class="section download">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h3>Are You Ready to Start? Download Now For Free!</h3>
+                <p>Fusce dapibus, tellus ac cursus commodo</p>
+                <a href="https://github.com/kamalcha/ActiveBox/archive/master.zip" class="btn btn-large">Download for Free</a>
+            </div>
+        </div>
+    </section><!-- download -->
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h5>Location</h5>
+                        <p>3481 Melrose Place</br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h5>Share with Love</h5>
+                        <ul class="footer-share">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/kamal_chaneman"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/kamalchaneman"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h5>About ActiveBox</h5>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- footer top -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="col-md-12">
+                    <p>Copyright © 2015 ActiveBox. All Rights Reserved</br>Made with by Kamal Chaneman. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- footer -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script> -->
+    
+    <script th:src="@{js/bootstrap.min.js}"></script>
+    <script th:src="@{js/jquery.flexslider-min.js}"></script>
+    <script th:src="@{js/jquery.fancybox.pack.js}"></script>
+    <script th:src="@{js/jquery.waypoints.min.js}"></script>
+    <script th:src="@{js/retina.min.js}"></script>
+    <script th:src="@{js/modernizr.js}"></script>
+    <script th:src="@{js/main.js}"></script>
+	
+   <script>  
+      $(window).load(function () {  
+          $('#slider').nivoSlider({  
+              effect:'sliceDown',   //设置幻灯变化效果，可以使用’random’
+              //controlNavThumbs:false,   //导航是否使用缩略图
+              //controlNav: true,  //是否显示导航控制
+              //directionNav: true,
+              //directionNavHide: true,	//是否悬浮显示导航
+              controlNav:false,
+              manualAdvance: true,   //是否手动变化幻灯
+              prevText: '<<',  //上一张文字设定
+              nextText: '>>'	//下一张文字设定
+          })  
+      })  
+</script> 
+</body>
+</html>
